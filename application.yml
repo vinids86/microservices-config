@@ -120,12 +120,10 @@ eureka:
 # For deployment in Docker containers
 spring:
   profiles: docker
-
-server.port: 8080
-
-spring:
   zipkin.baseUrl: http://zipkin-server:9411/zipkin/
   rabbitmq.host: rabbitmq
+
+server.port: 8080
 
 eureka:
   instance:
