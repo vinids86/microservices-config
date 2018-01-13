@@ -34,6 +34,8 @@ eureka:
 # Eureka instance 1 when used on Docker
 spring:
   profiles: docker1
+server:
+  port: 8761
 eureka:
   instance:
     hostname: discovery
