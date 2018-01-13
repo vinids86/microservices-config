@@ -118,6 +118,7 @@ spring:
 
 server.port: 8080
 
+spring.zipkin.baseUrl: http://zipkin-server:9411/zipkin/
 spring.rabbitmq.host: rabbitmq
 
 eureka:
