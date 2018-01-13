@@ -6,9 +6,9 @@ service:
   defaultMaxMs: 20
 
 spring:
-# 1.0 means 100%, see http://cloud.spring.io/spring-cloud-sleuth/spring-cloud-sleuth.html#_sampling
   sleuth:
-    sampler.percentage: 0.1
+    sampler:
+      percentage: 1.0
 #    traceId128: true
 #  zipkin:
 #    baseUrl: http://localhost:9411/zipkin/
