@@ -8,7 +8,7 @@ server:
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
-    instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
+    instanceId: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${server.port}}
   client:
     registryFetchIntervalSeconds: 5
 
