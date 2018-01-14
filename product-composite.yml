@@ -10,6 +10,8 @@ eureka:
     healthcheck:
       enabled: true
 
+feign.hystrix.enabled: true
+ 
 ---
 # For deployment in Docker containers
 spring:
