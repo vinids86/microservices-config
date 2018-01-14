@@ -11,7 +11,10 @@ eureka:
       enabled: true
 
 feign.hystrix.enabled: true
- 
+
+management:
+  security:
+    enabled: false 
 ---
 # For deployment in Docker containers
 spring:
