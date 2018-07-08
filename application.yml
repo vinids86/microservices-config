@@ -17,6 +17,7 @@ spring:
 #        enabled: true
 
 logging:
+  file: /tmp/microservices
   level:
     root: WARN
     br.com.makeshiftonjava: INFO
@@ -85,15 +86,6 @@ ribbon:
 
   # Max number of next servers to retry (excluding the first server)
   maxAutoRetriesNextServer: 1
-
-  # Interval to refresh the server list from the source
-  ServerListRefreshInterval: 1000
-
-  # Max number of retries on the same server (excluding the first try)
-  MaxAutoRetries: 1
-
-  # Max number of next servers to retry (excluding the first server)
-  MaxAutoRetriesNextServer: 1
 
 #
 #  # Connect timeout used by Apache HttpClient
